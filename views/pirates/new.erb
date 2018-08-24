@@ -1,23 +1,26 @@
 <!---<h1>Make your form here</h1>-->
+<h1>Enter Pirate Ships Here</h1>
+ <form action='/pirates' method="POST">
+  <h2>Pirate</h2>
+  <label for="pirate_name">Name</label><br>
+  <input id="pirate_name" type="text" name="pirate[name]" /><br>
+  <label for="pirate_weight">Weight</label><br>
+  <input id="pirate_weight" type="text" name="pirate[weight]" /><br>
+  <label for="pirate_height">Height</label><br>
+  <input id="pirate_height" type="text" name="pirate[height]" /><br><br>
+   <h2>Ship(s)</h2>
+  <label for="ship_name_1">Name</label><br>
+  <input id="ship_name_1" type="text" name="pirate[ships][][name]" /><br>
+  <label for="ship_type_1">Type</label><br>
+  <input id="ship_type_1" type="text" name="pirate[ships][][type]" /><br>
+  <label for="ship_booty_1">Booty</label><br>
+  <input id="ship_booty_1" type="text" name="pirate[ships][][booty]" /><br><br>
+   <label for="ship_name_2">Name</label><br>
+  <input id="ship_name_2" type="text" name="pirate[ships][][name]" /><br>
+  <label for="ship_booty_2">Type</label><br>
+  <input id="ship_type_2" type="text" name="pirate[ships][][type]" /><br>
+  <label for="ship_booty_2">Booty</label><br>
+  <input id="ship_booty_2" type="text" name="pirate[ships][][booty]" /><br>
+  <input type="submit" value="Submit">
+</form>
 
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>title</title>
-  </head>
-  <body>
-    <h1>Please enter your info below:</h1>
-    <form action="/pirates" method="post">
-      <p>Pirate Name: <input type="text" name="pirate[name]"></p>
-      <p>Pirate Weight: <input type="text" name="pirate[weight]"></p>
-      <p>Pirate Height: <input type="text" name="pirate[height]"></p>
-      <p>Pirate Ship 1 Name: <input id="ship_name_1" type="text" name="pirate[ships][][name]"></p>
-      <p>Pirate Ship 1 Type: <input id="ship_type_1" type="text" name="pirate[ships][][type]"></p>
-      <p>Pirate Ship 1 Booty: <input id="ship_booty_1" type="text" name="pirate[ships][][booty]"></p>
-      <p>Pirate Ship 2 Name: <input id="ship_name_2" type="text" name="pirate[ships][][name]"></p>
-      <p>Pirate Ship 2 Type: <input id="ship_type_2" type="text" name="pirate[ships][][type]"></p>
-      <p>Pirate Ship 2 Booty: <input id="ship_booty_2" type="text" name="pirate[ships][][booty]"></p>
-      <p><input type="submit" id="submit" value="Submit"></p>
-    </form>
-  </body>
-</html>
